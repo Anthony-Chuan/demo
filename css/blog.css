@@ -1,0 +1,222 @@
+.flex-row-2{
+    display: flex;
+}
+
+.breadcrumb-area{
+    padding: 151px 0 152px;
+    position: relative;
+    overflow: hidden;
+    background-color: #f2f2f2;
+}
+.breadcrumb-area:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: -25px;
+    margin: 0 auto;
+    width: 342px;
+    height: 342px;
+    border-radius: 100%;
+    background-color: #ffffff;
+}
+.breadcrumb-area .breadcrumb-img-1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.breadcrumb-area .breadcrumb-img-2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.breadcrumb-area .breadcrumb-img-2 img, .breadcrumb-area .breadcrumb-img-1 img{
+    max-width: 280px;
+}
+.breadcrumb-content {
+    position: relative;
+    text-align: center;
+}
+.breadcrumb-content h2 {
+    font-size: 48px;
+    font-weight: 500;
+    color: #323232;
+    line-height: 1;
+    margin: 0 0 29px;
+}
+.breadcrumb-content ul {
+    display: flex;
+    justify-content: center;
+}
+.breadcrumb-content ul li {
+    margin-right: 7px;
+    color: #686868;
+}
+.breadcrumb-content ul li a {
+    font-weight: 500;
+    font-size: 13px;
+    display: inline-block;
+}
+.breadcrumb-content ul li i {
+    font-size: 13px;
+    line-height: 1;
+    position: relative;
+    top: 2px;
+    color: #000000;
+}
+.breadcrumb-content ul li:last-child {
+    margin-right: 0;
+}
+
+
+.blog-area{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.blog-wrap{
+    margin-bottom: 30px;
+}
+.blog-img{
+    position: relative;
+    margin-bottom: 25px;
+}
+.blog-img img{
+    width: 100%;
+    transition: all .4s ease 0s;
+}
+.blog-img img:hover{
+    transform: scale(1.1);
+}
+.bli{
+    overflow: hidden;
+}
+.bli a{
+    display: block;
+}
+.bld{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border: 2px solid #e2e2e2;
+    text-align: center;
+    background-color: #ffffff;
+    display: flex;
+    margin: 0;
+    bottom: -30px;
+    right: 16px;
+    z-index: 5;
+    justify-content: center;
+    
+}
+.bld h5{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #3b3b3b;
+    margin: 0;
+}
+.bld span{
+    display: block;
+}
+.blog-meta ul{
+    display: flex;
+}
+.blog-meta li{
+    text-transform: uppercase;
+    color: #777777;
+    font-weight: 500;
+    margin: 0 5px 0 0;
+}
+.blog-content h3{
+    font-size: 23px;
+    color: #4a4a4a;
+    font-weight: 500;
+    margin: 8px 0 17px;
+    line-height: 33px;
+}
+.now{
+    display: inline-block;
+    font-weight: 500;
+    border: 2px solid #000000;
+    border-radius: 50px;
+    padding: 12px 25px;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    color: #383838;;
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 1;
+}
+.now:after,.now:before {
+    content: '';
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    z-index:-2;
+}
+.now:hover{
+    z-index:1;
+    color: #fdfdfd;
+}            
+.now:before {
+    transition: all .5s ease 0s;
+    background: #e97730;
+    z-index:-1;
+}      
+.now:hover:after,.now:hover:before {
+    width: 100%;
+    left: 0;
+} 
+.blog-wrap .blog-content p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #4a4a4a;
+    line-height: 28px;
+    margin: 0 0 25px;
+}
+.pagination-style-1 ul {
+    display: flex;
+    justify-content: center;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.pagination-style-1 ul li a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    border-radius: 100%;
+    margin: 0 4px;
+    color: #333;
+    text-align: center;
+}
+.pagination-style-1 ul li a.active {
+    background-color: #e97730;
+    color: #ffffff;
+}
+.pagination-style-1 ul li a:hover {
+    color: #e97730;
+}
+@media screen and (max-width:720px){
+    .breadcrumb-area {
+        padding: 61px 0 62px;
+    }
+    .breadcrumb-area .breadcrumb-img-1 img {
+        max-width: 80px;
+    }
+    .breadcrumb-area .breadcrumb-img-2 img {
+        max-width: 80px;
+    }
+    .blog-area{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
